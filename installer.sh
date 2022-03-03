@@ -59,9 +59,9 @@ elif [ -f ${DEFAULT_ARCHIVE_PATH} ]; then
 	mkdir loffice-365
 	tar xfz ${DEFAULT_ARCHIVE_PATH} -C loffice-365 --strip-components=1
 else
-	# Download latest release from Fmstrat/loffice-365
-	echo "Downloading latest release from Fmstrat/loffice-365"
-	ARCHIVE=$(curl https://api.github.com/repos/Fmstrat/loffice-365/releases |grep browser_download_url |head -n1 |sed 's/"browser_download_url": "//g;s/"//g;s/ //g')
+	# Download latest release from adil192/loffice-365
+	echo "Downloading latest release from adil192/loffice-365"
+	ARCHIVE=$(curl https://api.github.com/repos/adil192/loffice-365/releases |grep browser_download_url |head -n1 |sed 's/"browser_download_url": "//g;s/"//g;s/ //g')
 	curl -L "${ARCHIVE}" --output loffice-365.tgz
 	tar xfz loffice-365.tgz
 	rm -f loffice-365.tgz
@@ -83,7 +83,7 @@ Categories=${CATEGORIES}
 MimeType=${MIME_TYPES}
 " > "${APP_PATH}/loffice-365-${1}.desktop"
 		echo "#!/usr/bin/env bash
-set -e		
+set -e
 rm -f ${SYS_PATH}/resources/app/icon.png
 ln -s ${SYS_PATH}/apps/${1}/icon.png ${SYS_PATH}/resources/app/icon.png
 ${SYS_PATH}/apps/loffice365.sh ${URL} \"\$@\"

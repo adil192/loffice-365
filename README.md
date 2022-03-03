@@ -42,7 +42,7 @@ After visiting the URL that is provided, your browser will end on a blank page. 
 
 After that, run the installer for Loffice 365:
 ``` bash
-curl -s https://raw.githubusercontent.com/Fmstrat/loffice-365/main/installer.sh | bash -s
+curl -s https://raw.githubusercontent.com/adil192/loffice-365/main/installer.sh | bash -s
 ```
 
 ## Usage
@@ -78,4 +78,4 @@ After that, setup onedrive as above then run the installer for Loffice 365 using
 - Fluent UI - Icons under [MIT License](https://github.com/Fmstrat/fluentui/blob/master/LICENSE) with [restricted use](https://static2.sharepointonline.com/files/fabric/assets/microsoft_fabric_assets_license_agreement_nov_2019.pdf)
 - New app icons made by [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect) from [www.flaticon.com](https://www.flaticon.com/), exceptions
   - the Outlook icon was modified to have a white background
-  - the OneNote and Project icons which were made by Adil based on the other Pixel perfect icons.
+  - the OneNote and Project icons which were made by adil192 based on the other Pixel perfect icons.
