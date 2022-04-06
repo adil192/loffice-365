@@ -40,6 +40,8 @@ cp -a ../apps loffice-365/apps
 
 tar cvfz loffice-365.tgz loffice-365
 mv loffice-365.tgz ../binaries
+echo "
+Built to binaries/loffice-365.tgz"
 
 cd ..
 sudo rm -rf compile
