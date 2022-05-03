@@ -15,11 +15,8 @@ fi
 
 if [ "$1" == "image" ]; then
 	cd /tmp
-	#git clone https://github.com/jiahaog/nativefier.git
-	#git clone https://github.com/Fmstrat/nativefier.git
-	git clone https://github.com/adil192/nativefier.git
+	git clone https://github.com/nativefier/nativefier.git
 	cd nativefier
-	git checkout argv-url
 	docker build -t nativefier .
 	exit
 fi
