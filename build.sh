@@ -30,7 +30,7 @@ chmod a+rw binaries -R
 cd compile
 
 # Linux
-docker run -v "${PWD}":/target nativefier --name Loffice365 -p linux --internal-urls "(.*)" --browserwindow-options '{"webPreferences":{"nativeWindowOpen":true}}' --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36 Edg/90.0.818.41" https://www.office.com/ /target/
+docker run -v "${PWD}":/target nativefier --name Loffice365 -p linux --internal-urls "(.*)" --browserwindow-options '{"webPreferences":{"nativeWindowOpen":true}}' https://www.office.com/ /target/
 chown $(id -u):$(id -g) . -R
 mv Loffice365-linux-x64 loffice-365
 cp -a ../apps loffice-365/apps
