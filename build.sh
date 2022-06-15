@@ -35,7 +35,7 @@ chown $(id -u):$(id -g) . -R
 mv Loffice365-linux-x64 loffice-365
 cp -a ../apps loffice-365/apps
 
-tar cvfz loffice-365.tgz loffice-365
+tar cfz loffice-365.tgz loffice-365
 mv loffice-365.tgz ../binaries
 echo "
 Built to binaries/loffice-365.tgz"
