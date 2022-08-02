@@ -56,12 +56,7 @@ Simply run one of the available commands, start from a shortcut, or double click
 - `word`
 
 ## Compiling yourself
-Docker is required to build images.
-
-Create the nativefier image for docker:
-``` bash
-./build.sh image
-```
+[Nativefier](https://github.com/nativefier/nativefier/) is required to build images. You can install it with npm with `npm install -g nativefier`, or see other options in [Nativefier's Installation instructions](https://github.com/nativefier/nativefier/#installation).
 
 Run the build:
 ``` bash

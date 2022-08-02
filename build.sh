@@ -1,23 +1,19 @@
 #!/usr/bin/env bash
 
-# Install docker
-if [ -z "$(which docker)" ]; then
-	echo "This application requires docker. Install it with:
+# Install nativefier with npm
+if [ -z "$(which nativefier)" ]; then
+	echo "This application requires nativefier. Install it with:"
 
-sudo apt install docker.io
+	if [ -z "$(which npm)" ]; then
+		echo "sudo apt install nodejs"
+	fi
 
-You may need to add yourself to the docker group and reboot:
-
-sudo groupadd docker
-sudo usermod -aG docker \$USER"
+	echo "npm install -g nativefier"
 	exit
 fi
 
 if [ "$1" == "image" ]; then
-	cd /tmp
-	git clone https://github.com/nativefier/nativefier.git
-	cd nativefier
-	docker build -t nativefier .
+	echo "Docker is no longer used for nativefier. You can skip this command and just run ./build.sh"
 	exit
 fi
 
@@ -30,8 +26,7 @@ chmod a+rw binaries -R
 cd compile
 
 # Linux
-docker run -v "${PWD}":/target nativefier --name Loffice365 -p linux --internal-urls "(.*)" --browserwindow-options '{"webPreferences":{"nativeWindowOpen":true}}' https://www.office.com/ /target/
-chown $(id -u):$(id -g) . -R
+nativefier --name Loffice365 -p linux --internal-urls "(.*)" --browserwindow-options '{"webPreferences":{"nativeWindowOpen":true}}' https://www.office.com/ .
 mv Loffice365-linux-x64 loffice-365
 cp -a ../apps loffice-365/apps
 
