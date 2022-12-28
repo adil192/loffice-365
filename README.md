@@ -23,7 +23,7 @@ An electron wrapped Office 365 application integrated into your file manager as 
 
 ## How it works
 - When opening a file on your local system, it is symlinked to a temporary OneDrive folder
-- The [onedrive](https://github.com/abraunegg/onedrive) application is then used to synchroize that folder to OneDrive
+- The [onedrive](https://github.com/abraunegg/onedrive) application is then used to synchronize that folder to OneDrive
 - The file is then opened in a [nativefied](https://github.com/nativefier/nativefier) version of Office 365
 - Once the application is closed, [onedrive](https://github.com/abraunegg/onedrive) syncs the file back locally, and the file in OneDrive is removed
 
