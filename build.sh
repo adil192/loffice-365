@@ -12,6 +12,13 @@ if [ -z "$(which nativefier)" ]; then
 	exit
 fi
 
+# Install ImageMagick
+if [ -z "$(which convert)" ]; then
+	echo "This application requires ImageMagick. Install it with:"
+	echo "sudo apt install imagemagick"
+	exit
+fi
+
 if [ "$1" == "image" ]; then
 	echo "Docker is no longer used for nativefier. You can skip this command and just run ./build.sh"
 	exit
