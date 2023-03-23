@@ -97,6 +97,6 @@ ${SYS_PATH}/apps/loffice365.sh ${URL} \"\$@\"
 
 # Make shortcuts
 cd "${SYS_PATH}/apps"
-for APP in $(find * -type d); do
-	configureApp ${APP}
+for APP in $(find ./* -type d); do
+	configureApp ${APP:2}
 done
