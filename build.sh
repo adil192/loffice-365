@@ -30,7 +30,7 @@ mkdir -p binaries
 cp apps/office/icon.png compile
 chmod a+rw compile -R
 chmod a+rw binaries -R
-cd compile
+cd compile || exit
 
 # Linux
 nativefier --name Loffice365 -p linux --internal-urls "(.*)" --browserwindow-options '{"webPreferences":{"nativeWindowOpen":true}}' https://www.office.com/ .
