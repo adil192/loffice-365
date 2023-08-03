@@ -1,0 +1,21 @@
+{
+  "name": "loffice-365",
+  "version": "1.0.0",
+  "description": "An electron wrapped Office 365 application integrated into your file manager as if it was a native application.",
+  "scripts": {
+    "installer": "./installer.sh",
+    "build": "./build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adil192/loffice-365.git"
+  },
+  "author": "adil192",
+  "bugs": {
+    "url": "https://github.com/adil192/loffice-365/issues"
+  },
+  "homepage": "https://github.com/adil192/loffice-365#readme",
+  "dependencies": {
+    "nativefier": "^51.0.0"
+  }
+}

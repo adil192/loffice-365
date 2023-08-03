@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source loffice-365.bashrc
+
 # Install nativefier with npm
 if [ -z "$(which nativefier)" ]; then
 	echo "This application requires nativefier. Install it with:"

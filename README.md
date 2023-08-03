@@ -42,7 +42,13 @@ After visiting the URL that is provided, your browser will end on a blank page. 
 
 After that, run the installer for Loffice 365:
 ``` bash
+# Option 1: Download and run the installer only
 curl -s https://raw.githubusercontent.com/adil192/loffice-365/main/installer.sh | bash -s
+
+# Option 2: Clone the repo and run the installer
+git clone https://github.com/adil192/loffice-365.git
+cd loffice-365
+./installer.sh
 ```
 
 ## Usage
@@ -56,15 +62,21 @@ Simply run one of the available commands, start from a shortcut, or double click
 - `word`
 
 ## Compiling yourself
-[Nativefier](https://github.com/nativefier/nativefier/) is required to build images. You can install it with npm with `npm install -g nativefier`, or see other options in [Nativefier's Installation instructions](https://github.com/nativefier/nativefier/#installation).
+[Nativefier](https://github.com/nativefier/nativefier/) is required to build images. You can install it by cloning this repo and running `npm install`.
+Alternatively, you can install it manually with `npm install -g nativefier`, or see other options in [Nativefier's Installation instructions](https://github.com/nativefier/nativefier/#installation).
 
 Run the build:
 ``` bash
 ./build.sh
 ```
 
-After that, setup onedrive as above then run the installer for Loffice 365 using the archive you just built at binaries/loffice-365.tgz:
+After that, setup onedrive then run the installer for loffice-365:
 ``` bash
+# Run this if you haven't logged in to onedrive yet
+onedrive
+
+# Run the installer
+# It will automatically detect the archive you just built.
 ./installer.sh
 ```
 

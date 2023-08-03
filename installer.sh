@@ -2,6 +2,8 @@
 
 set -e
 
+source loffice-365.bashrc
+
 # Install zenity
 if [ -z "$(which zenity)" ]; then
 	echo "This application requires zenity. Install it with:
