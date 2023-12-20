@@ -32,7 +32,7 @@ jobs:
           npm run build
 
       - name: Upload binaries/loffice-365.tgz
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: loffice-365.tgz
           path: binaries/loffice-365.tgz
