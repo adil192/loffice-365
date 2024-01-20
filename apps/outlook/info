@@ -2,7 +2,7 @@
 NAME="Outlook"
 
 # Used for descriptions and window class
-FULL_NAME="Microsoft Outlook"
+FULL_NAME="Microsoft Outlook (loffice-365, deprecated)"
 
 # GNOME categories
 CATEGORIES="Office"

@@ -2,7 +2,7 @@
 NAME="OneNote"
 
 # Used for descriptions and window class
-FULL_NAME="Microsoft OneNote"
+FULL_NAME="Microsoft OneNote (loffice-365, deprecated)"
 
 # GNOME categories
 CATEGORIES="Office"

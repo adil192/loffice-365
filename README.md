@@ -1,5 +1,11 @@
 # Loffice 365
 
+Update: This project is powered by
+[nativefier](https://github.com/nativefier/nativefier)
+which is no longer maintained.
+This project will continue to work for now,
+but will break in the future and won't receive any security updates.
+
 An electron wrapped Office 365 application integrated into your file manager as if it was a native application.
 
 <img src="screenshots/loffice-365.gif">

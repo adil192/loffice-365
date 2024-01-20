@@ -2,7 +2,7 @@
 NAME="Excel"
 
 # Used for descriptions and window class
-FULL_NAME="Microsoft Excel"
+FULL_NAME="Microsoft Excel (loffice-365, deprecated)"
 
 # GNOME categories
 CATEGORIES="Office"

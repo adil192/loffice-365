@@ -2,7 +2,7 @@
 NAME="Project"
 
 # Used for descriptions and window class
-FULL_NAME="Microsoft Project"
+FULL_NAME="Microsoft Project (loffice-365, deprecated)"
 
 # GNOME categories
 CATEGORIES="Office"

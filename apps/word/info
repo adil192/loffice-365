@@ -2,7 +2,7 @@
 NAME="Word"
 
 # Used for descriptions and window class
-FULL_NAME="Microsoft Word"
+FULL_NAME="Microsoft Word (loffice-365, deprecated)"
 
 # GNOME categories
 CATEGORIES="Office"

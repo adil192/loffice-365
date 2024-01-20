@@ -47,4 +47,3 @@ Built to binaries/loffice-365.tgz"
 cd ..
 rm -rf compile
 chown $(id -u):$(id -g) binaries -R
-

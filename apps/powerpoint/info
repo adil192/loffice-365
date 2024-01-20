@@ -2,7 +2,7 @@
 NAME="PowerPoint"
 
 # Used for descriptions and window class
-FULL_NAME="Microsoft PowerPoint"
+FULL_NAME="Microsoft PowerPoint (loffice-365, deprecated)"
 
 # GNOME categories
 CATEGORIES="Office"

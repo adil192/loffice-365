@@ -2,7 +2,7 @@
 NAME="Office"
 
 # Used for descriptions and window class
-FULL_NAME="Microsoft Office 365"
+FULL_NAME="Microsoft Office 365 (loffice-365, deprecated)"
 
 # GNOME categories
 CATEGORIES="Office"
