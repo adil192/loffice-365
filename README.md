@@ -28,12 +28,17 @@ An electron wrapped Office 365 application integrated into your file manager as 
 - Once the application is closed, [onedrive](https://github.com/abraunegg/onedrive) syncs the file back locally, and the file in OneDrive is removed
 
 ## Installation
-First, you will need the linux OneDrive CLI client, zenity, and ImageMagick if it is not already installed. In Ubuntu, this can be installed with:
+First, you will need the linux OneDrive CLI client, zenity, and ImageMagick if it is not already installed.
+
+On Ubuntu, zenity and ImageMagick can be installed with:
 ``` bash
-sudo add-apt-repository ppa:yann1ck/onedrive  # not needed on Pop!_OS
-sudo apt-get update
-sudo apt install onedrive zenity imagemagick
+sudo apt install zenity imagemagick
 ```
+
+The OneDrive CLI client can be installed by following the instructions for
+[Ubuntu](https://github.com/abraunegg/onedrive/blob/master/docs/ubuntu-package-install.md)
+or [other distributions](https://github.com/abraunegg/onedrive/blob/master/docs/INSTALL.md).
+
 Next, login to your OneDrive personal or business account:
 ``` bash
 onedrive

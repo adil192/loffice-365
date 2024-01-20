@@ -14,11 +14,14 @@ fi
 
 # Install onedrive
 if [ -z "$(which onedrive)" ]; then
-	echo "This application requires the onedrive CLI. Install it with:
+	echo "This application requires the onedrive CLI.
 
-sudo add-apt-repository ppa:yann1ck/onedrive
-sudo apt-get update
-sudo apt install onedrive"
+See the official install instructions for Ubuntu-based distributions:
+https://github.com/abraunegg/onedrive/blob/master/docs/ubuntu-package-install.md
+
+or for other distributions:
+https://github.com/abraunegg/onedrive/blob/master/docs/INSTALL.md
+"
 	exit
 fi
 
