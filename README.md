@@ -5,6 +5,7 @@ Update: This project is powered by
 which is no longer maintained.
 This project will continue to work for now,
 but will break in the future and won't receive any security updates.
+If you want to uninstall, see the [uninstallation](#uninstallation) section below.
 
 An electron wrapped Office 365 application integrated into your file manager as if it was a native application.
 
@@ -60,6 +61,17 @@ curl -s https://raw.githubusercontent.com/adil192/loffice-365/main/installer.sh 
 git clone https://github.com/adil192/loffice-365.git
 cd loffice-365
 ./installer.sh
+```
+
+## Uninstallation
+``` bash
+# Option 1: Download and run the uninstaller only
+curl -s https://raw.githubusercontent.com/adil192/loffice-365/main/uninstall.sh | bash -s
+
+# Option 2: Clone the repo and run the uninstaller
+git clone https://github.com/adil192/loffice-365.git
+cd loffice-365
+./uninstall.sh
 ```
 
 ## Usage
